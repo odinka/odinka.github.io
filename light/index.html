@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>light2</title>
+  <style type="text/css"> 
+  body {
+  background-color: black;
+  padding: 20px;
+}
+
+/* METEG */
+
+.meteg {position: absolute;}
+
+.meteg img {position: absolute;}
+
+/* LIGHT */
+
+.light {
+  position: absolute; 
+  left: 50%;
+  top: 50%;
+  margin-top: -170px;
+  margin-left: -100px;
+}
+
+.light img {
+  position: absolute;
+  transition-duration: 0.5s;
+}
+
+/* BEHAVIORS */
+
+.on {opacity: 0;}
+
+.meteg:hover img.on {opacity: 1;}
+
+.meteg:hover ~ .light .on {
+  opacity: 1;
+  transition-duration: 2s;
+}
+  </style>
+</head>
+  <body>
+
+    <div class="meteg">
+      <img class= "off" height="70" src="light-switch_off.png"/>
+      <img class="on" height="70" src="light-switch_on.png"/>
+    </div>
+    
+    <div class="light">
+      <img class= "off" height="340" src="light_off.jpg"/>
+      <img class="on" height="340" src="light_on.jpg"/>
+    </div>
+  
+  </body>
+</html>
