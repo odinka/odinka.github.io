@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>running3</title>
+  <style>
+  .view {
+  height: 371px;
+  background: url(http://1.bp.blogspot.com/-6wVD2Nh0M1U/Uzmv4pLg8xI/AAAAAAAAAf4/sp1uEhRKCGs/s3200/background.jpg);
+  margin: -8px;
+  -webkit-animation: fly 4s infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fly {
+    from { background-position-x: 1000px;}
+    to   { background-position-x: 0px;}
+}
+
+
+.runners {
+  position: relative;
+  left: 50%;
+  top: 50%;
+}
+
+.abed {
+  width: 300px;
+  height: 500px;
+  background: url(http://1.bp.blogspot.com/-DqhiAZHrznk/Uzmr-Kt2tMI/AAAAAAAAAfk/N2h4XhRMQQI/s3200/Arab-running.gif) ;  position: absolute;
+  background-repeat: no-repeat;
+  top: -250px;
+  left: 100px;
+}
+
+.abed:hover {
+  top: -350px;
+}
+
+.pika {
+  width: 500px;
+  height: 500px;
+  background: url(http://1.bp.blogspot.com/-VL664rH6mbo/Uzmr-LkTWFI/AAAAAAAAAfo/ImG1o5AF124/s3200/pika_zps9431abfb.gif);  
+  position: absolute;
+  background-repeat: no-repeat;
+  top: -340px;
+  left: -400px;
+}
+
+.bubble {
+  opacity: 0;
+}
+
+.back {
+  position: relative;
+  top: -250px;
+  left: 30px;
+}
+
+.text {
+  position: absolute;
+  top: -238px;
+  left: 53px;
+  width: 60px;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+}
+
+.pika:hover ~ .bubble {
+opacity: 1;}
+
+
+
+  </style>
+</head>
+<body>
+  
+ <div class="view"></div> 
+  <div class="runners">
+    <div class="abed"></div> 
+    <div class="pika"></div> 
+    <div class="bubble">
+     <img class="back" src="http://1.bp.blogspot.com/-DrTApFarNvE/UznT_BMB1mI/AAAAAAAAAgI/x2KyNZyUktM/s3200/bubble.png" alt="" height=80>
+     <div class="text">Om Nom Nom Nom</div>
+  </div>
+  </div>
+
+</body>
+</html>
