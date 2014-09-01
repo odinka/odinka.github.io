@@ -31,7 +31,6 @@ body, html, .fill{
   background-position: bottom;
 }
 
-
 .drink {
   background-color: #892191;
   background-image: url('http://1.bp.blogspot.com/-2CcYSsawVK4/VAScbg46H2I/AAAAAAAAA-M/CfbgIPMwWOs/s1600/02.png');
@@ -47,7 +46,6 @@ body, html, .fill{
   background-attachment: fixed;
   background-position: top;
 }
-
 
 .sign {
   background-color: #f0007e;
@@ -65,8 +63,10 @@ body, html, .fill{
   background-position: bottom;
 }
 
-
 /*fonts*/
+
+article, h1, h2, p {font-family: alef;}
+
 
 article {
   position: absolute;
@@ -75,17 +75,14 @@ article {
   width: 40%;
   text-align: right;
   direction: rtl;
-
 }
 
 h1 {
-  font-family: alef;
   font-weight: bold;
   font-size: 60px;
 }
 
 h2 {
-  font-family: alef;
   font-size: 20px;
   text-align: right;
   color: white;
@@ -96,24 +93,26 @@ h2 {
   width: 40%;  
 }
 
-a {
-  color: white;
-}
+a {color: white;}
 
-p {
-  font-family: alef;
-  font-size: 40px;
-}
+p {font-size: 40px;}
 
 /*images*/
 
-img {
+.illustration {
   position: absolute;
   top: 20%;
   left: 200px;
   width: 25%;
 }
+
+.arrow {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+}
   </style>
+
   
 </head>
 <body>
@@ -123,40 +122,52 @@ img {
       <h1 class="yellow">חם היום</h1>
       <p class="white">הטמפרטורה הממוצעת לחודש ספטמבר היא 30 מעלות</p>
     </article>
-    <img src="http://1.bp.blogspot.com/-yBOjV3xASLY/VAOObVGGo4I/AAAAAAAAA74/Fmpdj8qC2U0/s1600/hot.png" alt="hot">
+    <img class='illustration' src="http://1.bp.blogspot.com/-yBOjV3xASLY/VAOObVGGo4I/AAAAAAAAA74/Fmpdj8qC2U0/s1600/hot.png" alt="hot">
+    <a href="#drinklink">
+      <img class='arrow' src="http://4.bp.blogspot.com/-Utbo53JsUfI/VASjYIoTqHI/AAAAAAAAA-0/ebuASYKlfzc/s1600/arrow.png" alt="scroll">
+    </a>
   </div>
   
-  <div class="drink fill">
+  <div id='drinklink' class="drink fill">
     <article>
       <h1 class="blue">חשוב לשתות</h1>
       <p class="white">אדם ממוצע צריך לשתות לפחות 10 כוסות ביום</p>
     </article>
-    <img src="http://2.bp.blogspot.com/-z7lzixDmCxo/VAOQSzl36SI/AAAAAAAAA8E/tZ9-l1zHXrU/s1600/glass.png" alt="glass">
+    <img class='illustration' src="http://2.bp.blogspot.com/-z7lzixDmCxo/VAOQSzl36SI/AAAAAAAAA8E/tZ9-l1zHXrU/s1600/glass.png" alt="glass">
+    <a href="#droplink">
+     <img class='arrow' src="http://4.bp.blogspot.com/-Utbo53JsUfI/VASjYIoTqHI/AAAAAAAAA-0/ebuASYKlfzc/s1600/arrow.png" alt="scroll">
+    </a>
   </div>
   
-  <div class="drop fill">
+  <div id='droplink' class="drop fill">
     <article>
       <h1 class="pink">לא רק אנחנו</h1>
       <p class="white">לא רק אנשים: גם דובים, ארנבים, כלבים וחתולים צריכים לשתות הרבה מים</p>
     </article>
-    <img src="http://4.bp.blogspot.com/-Z2kUaGVLh6U/VAOR3GsulJI/AAAAAAAAA8U/U73QFi4hr-E/s1600/drop.png" alt="drop">
+    <img class='illustration' src="http://4.bp.blogspot.com/-Z2kUaGVLh6U/VAOR3GsulJI/AAAAAAAAA8U/U73QFi4hr-E/s1600/drop.png" alt="drop">
+    <a href="#signlink">
+      <img class='arrow' src="http://4.bp.blogspot.com/-Utbo53JsUfI/VASjYIoTqHI/AAAAAAAAA-0/ebuASYKlfzc/s1600/arrow.png" alt="scroll">
+    </a>
   </div>
   
-  <div class="sign fill">
+  <div id='signlink' class="sign fill">
     <article>
       <h1 class="purple">ומה עם חתולי רחוב?</h1>
       <p class="white">בישראל חיים 400,000 חתולי רחוב שאין מי שידאג שהם ישתו</p>
     </article>
-    <img src="http://3.bp.blogspot.com/-K46AQFMLFG4/VAOR3HNtr3I/AAAAAAAAA8c/dZJwtLHOOuE/s1600/sign.png" alt="sign">
+    <img class='illustration' src="http://3.bp.blogspot.com/-K46AQFMLFG4/VAOR3HNtr3I/AAAAAAAAA8c/dZJwtLHOOuE/s1600/sign.png" alt="sign">
+    <a href="#catlink">
+      <img class='arrow' src="http://4.bp.blogspot.com/-Utbo53JsUfI/VASjYIoTqHI/AAAAAAAAA-0/ebuASYKlfzc/s1600/arrow.png" alt="scroll">
+    </a>
   </div>
   
-  <div class="cat fill">
+  <div id='catlink' class="cat fill">
     <article>
-      <h1 class="purple">ומה עם חתולי רחוב?</h1>
-      <p class="white">בישראל חיים 400,000 חתולי רחוב שאין מי שידאג שהם ישתו</p>
+      <h1 class="purple">חם היום</h1>
+      <p class="white">אז שימו בחוץ קערת מים לחתולי הרחוב :)</p>
     </article>
-    <img src="http://3.bp.blogspot.com/-pP7HDS5fJ9Q/VAOR3PkzE0I/AAAAAAAAA8Q/iNgVrFt9XgE/s1600/cat.png" alt="cat">
-<h2>עיצוב וקוד: <a href="odinshadmi.wix.com/fff010">אודין שדמי</a>  | ספטמבר 2014</h2>
+    <img class='illustration' src="http://3.bp.blogspot.com/-pP7HDS5fJ9Q/VAOR3PkzE0I/AAAAAAAAA8Q/iNgVrFt9XgE/s1600/cat.png" alt="cat">
+<h2>עיצוב וקוד: <a href="http://odinshadmi.wix.com/fff010" target="_blank">אודין שדמי</a>  | ספטמבר 2014</h2>
   </div>
   
 
