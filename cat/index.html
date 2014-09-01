@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>cats</title>
-  
+  <script type='text/javascript' src='jquery-2.1.0.min.js'></script>
+
   <style>
     @import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
 
@@ -90,7 +91,7 @@ h2 {
   position: absolute;
   bottom: 5px;
   right: 150px;
-  width: 40%;  
+  width: 40%;
 }
 
 a {color: white;}
@@ -113,54 +114,61 @@ p {font-size: 40px;}
 }
   </style>
 
-  
+<script>
+function scrollTo(hash) {
+  $('body').animate({
+      'scrollTop':   $('#' + hash).offset().top
+  }, 500);
+}
+</script>
+
 </head>
 <body>
-  
+
   <div class="heat fill">
     <article>
       <h1 class="yellow">חם היום</h1>
       <p class="white">הטמפרטורה הממוצעת לחודש ספטמבר היא 30 מעלות</p>
     </article>
     <img class='illustration' src="http://1.bp.blogspot.com/-yBOjV3xASLY/VAOObVGGo4I/AAAAAAAAA74/Fmpdj8qC2U0/s1600/hot.png" alt="hot">
-    <a href="#drinklink">
+    <a onclick='scrollTo("drinklink")'>
       <img class='arrow' src="http://4.bp.blogspot.com/-Utbo53JsUfI/VASjYIoTqHI/AAAAAAAAA-0/ebuASYKlfzc/s1600/arrow.png" alt="scroll">
     </a>
   </div>
-  
+
   <div id='drinklink' class="drink fill">
     <article>
       <h1 class="blue">חשוב לשתות</h1>
       <p class="white">אדם ממוצע צריך לשתות לפחות 10 כוסות ביום</p>
     </article>
     <img class='illustration' src="http://2.bp.blogspot.com/-z7lzixDmCxo/VAOQSzl36SI/AAAAAAAAA8E/tZ9-l1zHXrU/s1600/glass.png" alt="glass">
-    <a href="#droplink">
+    <a onclick='scrollTo("droplink")'>
      <img class='arrow' src="http://4.bp.blogspot.com/-Utbo53JsUfI/VASjYIoTqHI/AAAAAAAAA-0/ebuASYKlfzc/s1600/arrow.png" alt="scroll">
     </a>
   </div>
-  
+
   <div id='droplink' class="drop fill">
     <article>
       <h1 class="pink">לא רק אנחנו</h1>
       <p class="white">לא רק אנשים: גם דובים, ארנבים, כלבים וחתולים צריכים לשתות הרבה מים</p>
     </article>
     <img class='illustration' src="http://4.bp.blogspot.com/-Z2kUaGVLh6U/VAOR3GsulJI/AAAAAAAAA8U/U73QFi4hr-E/s1600/drop.png" alt="drop">
-    <a href="#signlink">
+    <a onclick='scrollTo("signlink")'>
       <img class='arrow' src="http://4.bp.blogspot.com/-Utbo53JsUfI/VASjYIoTqHI/AAAAAAAAA-0/ebuASYKlfzc/s1600/arrow.png" alt="scroll">
     </a>
   </div>
-  
+
   <div id='signlink' class="sign fill">
     <article>
       <h1 class="purple">ומה עם חתולי רחוב?</h1>
       <p class="white">בישראל חיים 400,000 חתולי רחוב שאין מי שידאג שהם ישתו</p>
     </article>
     <img class='illustration' src="http://3.bp.blogspot.com/-K46AQFMLFG4/VAOR3HNtr3I/AAAAAAAAA8c/dZJwtLHOOuE/s1600/sign.png" alt="sign">
-    <a href="#catlink">
+    <a onclick='scrollTo("catlink")'>
       <img class='arrow' src="http://4.bp.blogspot.com/-Utbo53JsUfI/VASjYIoTqHI/AAAAAAAAA-0/ebuASYKlfzc/s1600/arrow.png" alt="scroll">
     </a>
   </div>
-  
+
   <div id='catlink' class="cat fill">
     <article>
       <h1 class="purple">חם היום</h1>
@@ -169,7 +177,7 @@ p {font-size: 40px;}
     <img class='illustration' src="http://3.bp.blogspot.com/-pP7HDS5fJ9Q/VAOR3PkzE0I/AAAAAAAAA8Q/iNgVrFt9XgE/s1600/cat.png" alt="cat">
 <h2>עיצוב וקוד: <a href="http://odinshadmi.wix.com/fff010" target="_blank">אודין שדמי</a>  | ספטמבר 2014</h2>
   </div>
-  
+
 
 
 </body>
