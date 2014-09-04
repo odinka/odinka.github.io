@@ -114,24 +114,24 @@ p {font-size: 40px;}
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 480px) {
 /* Styles */
-  
+
 .heat, .drink, .drop, .sign, .cat {
   background-attachment: absolute;
   background-position: bottom;
   background-image: none;
   }
 
-  
+
   /*fonts*/
 
 article, h1, h2, p {font-family: alef;}
 
-  
-  
+
+
 .blue {color: #009eff;}
 .yellow {color: #ffc601;}
 .white {color: white;}
@@ -139,7 +139,7 @@ article, h1, h2, p {font-family: alef;}
 .pink {color: #f0007e;}
 .green {color: #00b148;}
 
-  
+
 article {
   position: absolute;
   top: 40%;
@@ -161,14 +161,14 @@ h2 {
   position: absolute;
   bottom: 5px;
   right: 150px;
-  width: 80%;  
+  width: 80%;
 }
 
 a {color: white;}
 
 p {font-size: 70px;}
 
-  
+
   /*images*/
 
 .illustration {
@@ -184,7 +184,7 @@ p {font-size: 70px;}
   left: 45%;
 }
 
-  
+
 }
   </style>
 
@@ -198,51 +198,51 @@ function scrollTo(hash) {
 
 </head>
 <body>
-  
+
   <div class="heat fill">
     <article>
       <h1 class="yellow">חם היום</h1>
       <p class="white">הטמפרטורה הממוצעת לחודש ספטמבר היא 30 מעלות</p>
     </article>
     <img class='illustration' src="http://2.bp.blogspot.com/-tqJnp_J0RXc/VAistGv5VmI/AAAAAAAABBw/vHEeF4Gmowk/s1600/hot-3.gif" alt="hot">
-    <a href="#drinklink">
+    <a onclick='scrollTo("drinklink")'>
       <img class='arrow' src="http://4.bp.blogspot.com/-Utbo53JsUfI/VASjYIoTqHI/AAAAAAAAA-0/ebuASYKlfzc/s1600/arrow.png" alt="scroll">
     </a>
   </div>
-  
+
   <div id='drinklink' class="drink fill">
     <article>
       <h1 class="blue">חשוב לשתות</h1>
       <p class="white">אדם ממוצע צריך לשתות לפחות 10 כוסות ביום</p>
     </article>
     <img class='illustration' src="http://2.bp.blogspot.com/-dqUR7QR9lc4/VAitl9kc_fI/AAAAAAAABB4/hEodT8Gitv8/s1600/glass2.gif" alt="glass">
-    <a href="#droplink">
+    <a onclick='scrollTo("droplink")'>
      <img class='arrow' src="http://4.bp.blogspot.com/-Utbo53JsUfI/VASjYIoTqHI/AAAAAAAAA-0/ebuASYKlfzc/s1600/arrow.png" alt="scroll">
     </a>
   </div>
-  
+
   <div id='droplink' class="drop fill">
     <article>
       <h1 class="pink">לא רק אנחנו</h1>
       <p class="white">לא רק אנשים: גם דובים, ארנבים, כלבים וחתולים צריכים לשתות הרבה מים</p>
     </article>
     <img class='illustration' src="http://3.bp.blogspot.com/-_pK1VQpQZXM/VAisD7tLKaI/AAAAAAAABBQ/kRaV6UMvU4Q/s1600/drop.gif" alt="drop">
-    <a href="#signlink">
+    <a onclick='scrollTo("signlink")'>
       <img class='arrow' src="http://4.bp.blogspot.com/-Utbo53JsUfI/VASjYIoTqHI/AAAAAAAAA-0/ebuASYKlfzc/s1600/arrow.png" alt="scroll">
     </a>
   </div>
-  
+
   <div id='signlink' class="sign fill">
     <article>
       <h1 class="purple">ומה עם חתולי רחוב?</h1>
       <p class="white">בישראל חיים 400,000 חתולי רחוב שאין מי שידאג שהם ישתו</p>
     </article>
     <img class='illustration' src="http://2.bp.blogspot.com/-hyZGjkWGltI/VAijmNNi0hI/AAAAAAAABBA/DjfwuP5EzNg/s1600/sign6.gif" alt="sign">
-    <a href="#catlink">
+    <a onclick='scrollTo("catlink")'>
       <img class='arrow' src="http://4.bp.blogspot.com/-Utbo53JsUfI/VASjYIoTqHI/AAAAAAAAA-0/ebuASYKlfzc/s1600/arrow.png" alt="scroll">
     </a>
   </div>
-  
+
   <div id='catlink' class="cat fill">
     <article>
       <h1 class="purple">חם היום</h1>
@@ -251,7 +251,7 @@ function scrollTo(hash) {
     <img class='illustration' src="http://4.bp.blogspot.com/-APC6-s22fRI/VAisD90yhWI/AAAAAAAABBY/eGhwaxbtN2Q/s1600/cat-2.gif" alt="cat">
 <h2>עיצוב וקוד: <a href="http://odinshadmi.wix.com/fff010" target="_blank">אודין שדמי</a>  | ספטמבר 2014</h2>
   </div>
-  
+
 
 
 </body>
