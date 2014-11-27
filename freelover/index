@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {background-color: white}
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -300px;
+      margin-left: -400px;}
+  </style>
+  
+  <meta charset="utf-8">
+  <title>אהבת חינם</title>
+</head>
+<body>
+<img src="http://2.bp.blogspot.com/-FcKgTAVALpo/VHcY2ormyYI/AAAAAAAANsg/cSntIqNFaAc/s1600/web4.jpg" alt="under construction">
+</body>
+</html>
