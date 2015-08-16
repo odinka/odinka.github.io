@@ -27,14 +27,18 @@ body {background-color: black;}
 
 /* logo */
 
-.logo {
+.logo, .tagline {
   font-family: 'Six Caps', sans-serif;
-  font-size: 24px;
   color: white;
   position: absolute;
   left: 50%;
+}
+
+.logo {
+  font-size: 24px;
   top:50%; 
 }
+
 
 .tagline {
   font-family: 'Six Caps', sans-serif;
