@@ -1,0 +1,29 @@
+body {background-color: black;}
+
+/* frame */
+
+.lefti, .righti, .topi, .bottomi { 
+  background-color: white;
+  position: absolute;
+}
+
+.lefti, .righti { 
+  width: 5px;
+  top: 10px; 
+  bottom: 10px;
+}
+
+.lefti {left: 10px;}
+.righti {right: 10px;}
+
+.topi, .bottomi { 
+  height: 5px;
+  left: 10px;  
+  right: 10px; 
+}
+
+.topi {top: 10px;}
+.bottomi {bottom: 10px;}
+
+/* logo */
+
