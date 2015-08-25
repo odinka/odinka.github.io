@@ -83,6 +83,6 @@ body {background-color: black;}
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
 /* Styles */
-/*.all {width: 75%;}*/
+.all {width: 150%;}
 
     
